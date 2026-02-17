@@ -10,6 +10,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist"
+  ],
   "author": "FizzyElt",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
