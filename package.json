@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "@fizzyelt/config": "./dist/index.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "FizzyElt",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.29.3",
   "devDependencies": {
