@@ -1,6 +1,6 @@
 import { defineConfig } from "tsdown";
 
-export default defineConfig({
+const config = defineConfig({
     dts: true,
     target: "node22",
     entry: ["src/index.ts"],
@@ -8,3 +8,6 @@ export default defineConfig({
     inlineOnly: false,
     copy: [{ from: "src/configs", to: "dist" }],
 });
+
+// oxlint-disable-next-line import/no-default-export
+export default config;

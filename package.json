@@ -1,33 +1,33 @@
 {
-  "name": "@fizzyelt/config",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "bin": {
-    "@fizzyelt/config": "./dist/index.mjs"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": [
-    "dist"
-  ],
-  "author": "FizzyElt",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "license": "ISC",
-  "packageManager": "pnpm@10.29.3",
-  "devDependencies": {
-    "@types/node": "^25.2.3",
-    "oxfmt": "^0.33.0",
-    "oxlint": "^1.48.0",
-    "tsdown": "^0.20.3",
-    "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "commander": "^14.0.3"
-  }
+    "name": "@fizzyelt/config",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [],
+    "license": "ISC",
+    "author": "FizzyElt",
+    "bin": {
+        "@fizzyelt/config": "./dist/index.mjs"
+    },
+    "files": [
+        "dist"
+    ],
+    "type": "module",
+    "main": "index.js",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "commander": "^14.0.3"
+    },
+    "devDependencies": {
+        "@types/node": "^25.2.3",
+        "oxfmt": "^0.33.0",
+        "oxlint": "^1.48.0",
+        "tsdown": "^0.20.3",
+        "typescript": "^5.9.3"
+    },
+    "packageManager": "pnpm@10.29.3"
 }
