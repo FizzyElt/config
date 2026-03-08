@@ -46,16 +46,17 @@ function main(): Promise<void> {
     }
 
     if (options.oxc) {
-        return Promise.all([
-            fs.copyFile(
+        return fs
+            .copyFile(
                 path.join(__dirname, "configs/.oxlintrc.json"),
                 path.join(process.cwd(), ".oxlintrc.json"),
-            ),
-            fs.copyFile(
-                path.join(__dirname, "configs/.oxfmtrc.json"),
-                path.join(process.cwd(), ".oxfmtrc.json"),
-            ),
-        ]).then(() => {});
+            )
+            .then(() =>
+                fs.copyFile(
+                    path.join(__dirname, "configs/.oxfmtrc.json"),
+                    path.join(process.cwd(), ".oxfmtrc.json"),
+                ),
+            );
     }
 
     throw new Error("No any option");

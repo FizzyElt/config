@@ -24,9 +24,9 @@
     },
     "devDependencies": {
         "@types/node": "^25.2.3",
-        "oxfmt": "^0.35.0",
-        "oxlint": "^1.50.0",
-        "tsdown": "^0.20.3",
+        "oxfmt": "^0.36.0",
+        "oxlint": "^1.51.0",
+        "tsdown": "^0.21.0",
         "typescript": "^5.9.3"
     },
     "packageManager": "pnpm@10.29.3"
