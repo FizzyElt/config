@@ -5,7 +5,9 @@ const config = defineConfig({
     target: "node22",
     entry: ["src/index.ts"],
     fixedExtension: true,
-    inlineOnly: false,
+    deps: {
+        onlyAllowBundle: false,
+    },
     copy: [{ from: "src/configs", to: "dist" }],
 });
 
