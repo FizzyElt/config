@@ -6,7 +6,7 @@
     "endOfLine": "lf",
     "semi": true,
     "singleQuote": false,
-    "experimentalSortImports": {
+    "sortImports": {
         "groups": [
             "type-import",
             ["value-builtin", "value-external"],
