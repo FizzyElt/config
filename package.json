@@ -5,6 +5,10 @@
     "keywords": [],
     "license": "ISC",
     "author": "FizzyElt",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/FizzyElt/config"
+    },
     "bin": {
         "@fizzyelt/config": "./dist/index.mjs"
     },
@@ -24,8 +28,8 @@
     },
     "devDependencies": {
         "@types/node": "^25.2.3",
-        "oxfmt": "^0.45.0",
-        "oxlint": "^1.60.0",
+        "oxfmt": "^0.47.0",
+        "oxlint": "^1.62.0",
         "tsdown": "^0.21.0",
         "typescript": "^5.9.3"
     },
