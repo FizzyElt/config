@@ -37,6 +37,6 @@
         "moduleDetection": "force",
         "skipLibCheck": true
     },
-    "include": ["src/**/*.ts", "tsdown.config.ts"],
+    "include": ["src/**/*.ts", "tsdown.config.ts", "oxfmt.config.ts", "oxlint.config.ts"],
     "exclude": ["dist", "node_modules"]
 }

@@ -6,7 +6,7 @@ const config = defineConfig({
     entry: ["src/index.ts"],
     fixedExtension: true,
     deps: {
-        onlyAllowBundle: false,
+        onlyBundle: false,
     },
     copy: [{ from: "src/configs", to: "dist" }],
 });
