@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
 import { Command } from "commander";
-import console from "node:console";
 import * as fs from "node:fs/promises";
-import * as path from "node:path";
+import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
 
@@ -14,12 +13,6 @@ const program = new Command("@fizzyelt/config");
 
 function copyConfig(from: string, to: string): Promise<void> {
     return fs.copyFile(path.join(__dirname, "configs", from), path.join(process.cwd(), to));
-}
-
-function copyOxcJsonConfig(): Promise<void> {
-    return copyConfig(".oxlintrc.json", ".oxlintrc.json").then(() =>
-        copyConfig(".oxfmtrc.json", ".oxfmtrc.json"),
-    );
 }
 
 function copyOxcTsConfig(): Promise<void> {
@@ -39,16 +32,9 @@ program
 program
     .command("oxc")
     .description("copy oxc config")
-    .option("-t, --typescript", "copy TypeScript config")
-    .action(async (options: { typescript?: boolean }) => {
-        if (options.typescript) {
-            await copyOxcTsConfig();
-            console.log("✅ Copied oxc TypeScript configs: oxlint.config.ts, oxfmt.config.ts");
-            return;
-        }
-
-        await copyOxcJsonConfig();
-        console.log("✅ Copied oxc JSON configs: .oxlintrc.json, .oxfmtrc.json");
+    .action(async () => {
+        await copyOxcTsConfig();
+        console.log("✅ Copied oxc TypeScript configs: oxlint.config.ts, oxfmt.config.ts");
     });
 
 async function main(): Promise<void> {

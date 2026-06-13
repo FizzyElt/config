@@ -27,10 +27,10 @@
         "commander": "^14.0.3"
     },
     "devDependencies": {
-        "@types/node": "^25.9.1",
-        "oxfmt": "^0.53.0",
-        "oxlint": "^1.68.0",
-        "tsdown": "^0.22.1",
+        "@types/node": "^25.9.3",
+        "oxfmt": "^0.54.0",
+        "oxlint": "^1.69.0",
+        "tsdown": "^0.22.2",
         "typescript": "^6.0.3"
     },
     "packageManager": "pnpm@11.5.1"
